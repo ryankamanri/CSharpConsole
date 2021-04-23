@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CSharpConsole
+namespace _4_18
 {
     class StaticClassTest
     {

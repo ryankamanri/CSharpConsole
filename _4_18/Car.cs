@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CSharpConsole
+namespace _4_18
 {
     class Car
     {
@@ -36,7 +36,7 @@ namespace CSharpConsole
             else if (this.weight < c2.weight) return false;
             else return true;
         }
-
+        
         public override string ToString()
         {
             return "weight: " + weight + "\nbrand:" + brand + "\ndate:" + date + "\nmaxSpeed:" + maxSpeed;
