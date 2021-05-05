@@ -59,7 +59,7 @@ namespace _5_5
             int sum = 0, sumn = 0;
             for (int i = 0; i < nCourse; i++)
             {
-                if (courses[i].gethk())
+                if (courses[i].Hk)
                     continue;
                 sum += courses[i].getcj();
                 sumn++;

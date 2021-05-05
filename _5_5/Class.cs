@@ -8,7 +8,8 @@ namespace _5_5
 {
     class Class
     {
-        private int num = 0, studentnum = 0;
+        public int num { get; private set; }
+        private int studentnum;
         private string name;
         private Student[] students;
 
@@ -17,13 +18,13 @@ namespace _5_5
         {
             this.num = num;
             this.name = name;
-            students = new Student[100];
+            students = new Student[100];//注意实例化
         }
         /**
          * 往班级中添加学生
          * @param student
          */
-        public void addStudent(Student student)
+        public void AddStudent(Student student)
         {
             if (studentnum > num - 1)
                 return;
@@ -31,14 +32,14 @@ namespace _5_5
             studentnum++;
         }
 
-        /**
-         * 返回班级人数
-         * @return
-         */
-        public int GetStudentNum()
-        {
-            return num;
-        }
+        ///**
+        // * 返回班级人数
+        // * @return
+        // */
+        //public int GetStudentNum()
+        //{
+        //    return num;
+        //}
 
         /**
          * 返回对应下标的学生对象
@@ -47,6 +48,7 @@ namespace _5_5
          */
         public Student GetStudent(int index)
         {
+            if (index > studentnum) return null;
             return students[index];
         }
 

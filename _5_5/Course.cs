@@ -21,23 +21,33 @@ namespace _5_5
             this.id = id;
             this.name = name;
         }
-        /**
-         * 设置缓考
-         * @param hk
-         */
-        public void sethk(bool hk)
+        ///**
+        // * 设置缓考
+        // * @param hk
+        // */
+        //public void sethk(bool hk)
+        //{
+        //    this.hk = hk;
+        //}
+        ///**
+        // * 返回是否学生缓考
+        // * @return
+        // */
+        //public bool gethk()
+        //{
+        //    return hk;
+        //}
+        public bool Hk
         {
-            this.hk = hk;
+            get 
+            {
+                return hk;
+            }
+            set
+            {
+                this.hk = value;
+            }
         }
-        /**
-         * 返回是否学生缓考
-         * @return
-         */
-        public bool gethk()
-        {
-            return hk;
-        }
-
         /**
          * 设置成绩
          * @param cj
