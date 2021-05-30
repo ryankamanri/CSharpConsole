@@ -6,16 +6,19 @@ namespace _5_16
     {
         static void Main(string[] args)
         {
-            //    //Console.WriteLine("Hello World!");
+            Console.WriteLine("Hello World!");
 
-            //    //Animal dog = new Dog(3, 50);
-            //    //Animal cat = new Cat(2, 40);
+            Animal dog = new Dog(3, 50);
+            Animal cat = new Cat(2, 40);
 
-            //    //Console.WriteLine(dog.ToString());
-            //    ////Console.WriteLine(dog.HasHairs);
-            //    //dog.Move();
-            //    //dog.Sleep();
-            //    ////dog.Call();
+            Console.WriteLine(dog.ToString());
+            //Console.WriteLine(dog.HasHairs);
+            dog.Move();
+            dog.Sleep();
+            dog.Call();
+            cat.Call();
+            
+            
 
 
             //    //            里氏转换原则
@@ -51,17 +54,17 @@ namespace _5_16
             //}
 
 
-            Number<int> intSwap = new Number<int>();
-            Number<char> charSwap = new Number<char>();
-            int i1 = 1, i2 = 2;
-            char a = 'a', b = 'b';
-            Console.WriteLine($"i1 = {i1}, i2 = {i2}");
-            Console.WriteLine($"a = {a},b = {b}");
-            intSwap.Swap(ref i1,ref i2);
-            charSwap.Swap(ref a,ref b);
-            Console.WriteLine("after swapped");
-            Console.WriteLine($"i1 = {i1}, i2 = {i2}");
-            Console.WriteLine($"a = {a},b = {b}");
+            //Number<int> intSwap = new Number<int>();
+            //Number<char> charSwap = new Number<char>();
+            //int i1 = 1, i2 = 2;
+            //char a = 'a', b = 'b';
+            //Console.WriteLine($"i1 = {i1}, i2 = {i2}");
+            //Console.WriteLine($"a = {a},b = {b}");
+            //intSwap.Swap(ref i1,ref i2);
+            //charSwap.Swap(ref a,ref b);
+            //Console.WriteLine("after swapped");
+            //Console.WriteLine($"i1 = {i1}, i2 = {i2}");
+            //Console.WriteLine($"a = {a},b = {b}");
         }
     }
 }

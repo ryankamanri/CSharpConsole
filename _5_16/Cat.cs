@@ -8,12 +8,14 @@ namespace _5_16
     {
         public bool HasHairs { get; set; } = true;
 
-        public Cat(double weight,double height):base(weight,height)
+        public Cat(double weight, double height) : base(weight, height)
         {
 
         }
 
-        public void Call()
+        
+    
+        public override void Call()
         {
             Console.WriteLine("Mew");
         }

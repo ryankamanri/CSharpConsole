@@ -4,7 +4,7 @@ using System.Text;
 
 namespace _5_16
 {
-    class Animal
+    abstract class Animal
     {
         public double Weight { get; private set; }//只能在类当中被修改
         public double Height { get; private set; }
@@ -25,6 +25,7 @@ namespace _5_16
             Console.WriteLine("Can Sleep");
         }
 
+        public abstract void Call();
         //public override string ToString()
         //{
         //    return "Weight : " + Weight + "\nHeight : " + Height;

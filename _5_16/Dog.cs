@@ -13,7 +13,7 @@ namespace _5_16
 
         }
 
-        public void Call()
+        public override void Call()
         {
             Console.WriteLine("Wow");
         }

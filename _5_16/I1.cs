@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CSharpConsole
+namespace _5_16
 {
-    class ReadConfigurations
+    interface I1
     {
 
     }
